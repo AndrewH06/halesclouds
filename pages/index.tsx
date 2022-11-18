@@ -5,7 +5,7 @@ import Header from "./components/Header";
 
 export default function Home() {
   return (
-    <div className="text-gray-800 relative flex flex-col min-h-screen items-center pt-8 sm:pt-12">
+    <div className="text-gray-800 gap-4 relative flex flex-col min-h-screen items-center pt-8 sm:pt-12">
       <Head>
         <title>Hale's Clouds</title>
         <meta name="description" content="Quickly identify clouds" />
@@ -19,8 +19,8 @@ export default function Home() {
           <CloudLayout />
         </main>
       </div>
-      <footer className="w-full">
-        <div>poo</div>
+      <footer className="flex justify-center w-full bg-gray-100 py-2">
+        <p>This is for me. I don't care how ugly it is.</p>
       </footer>
     </div>
   );

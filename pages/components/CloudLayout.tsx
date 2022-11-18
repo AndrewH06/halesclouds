@@ -2,20 +2,17 @@ import Link from "next/link";
 import { FC } from "react";
 import AllClouds from "./AllClouds";
 
+type LevelTypes = "low" | "mid" | "high";
+
 const CloudLayout: FC = () => {
-  const levels: Array<string> = ["high", "mid", "low"];
-  const clouds: { [key: string]: Array<string> } = {
-    high: ["cirrus", "cirrostratus", "cirrocumulus"],
-    mid: ["altocumulus", "altostratus", "nimbostratus"],
-    low: ["cumulus", "cumulonimbus", "status"],
-  };
+  const levels: Array<LevelTypes> = ["high", "mid", "low"];
   return (
-    <div className="flex flex-col gap-8">
-      {levels.map((level: string) => {
+    <div className="flex flex-col">
+      {levels.map((level: LevelTypes) => {
         return (
-          <div className="flex flex-col gap-4 px-12 py-8">
+          <div className="flex flex-col gap-4 px-12 py-2">
             <h4 className="mx-auto capitalize text-2xl">{level} Level</h4>
-            <AllClouds clouds={clouds[level]} />
+            <AllClouds level={level} />
           </div>
         );
       })}
