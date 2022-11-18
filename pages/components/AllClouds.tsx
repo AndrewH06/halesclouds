@@ -36,21 +36,21 @@ const AllClouds = ({ level }: { level: PropTypes }): JSX.Element => {
   return (
     <div className="flex flex-col gap-4">
       <div className="flex flex-col">
-        {level == "low" && low && <HighClouds clouds={low} />}
-        {level == "mid" && mid && <HighClouds clouds={mid} />}
-        {level == "high" && high && <HighClouds clouds={high} />}
+        {level == "low" && low && <RenderClouds clouds={low} />}
+        {level == "mid" && mid && <RenderClouds clouds={mid} />}
+        {level == "high" && high && <RenderClouds clouds={high} />}
       </div>
     </div>
   );
 };
 
-const HighClouds = ({ clouds }: { clouds: CloudType[] }): JSX.Element => {
+const RenderClouds = ({ clouds }: { clouds: CloudType[] }): JSX.Element => {
   console.log(clouds);
   return (
     <div className="flex gap-2 flex-wrap">
-      {clouds.map((cloud: CloudType) => {
+      {clouds.map((cloud: CloudType, index: number) => {
         return (
-          <div className="flex flex-col">
+          <div key={index} className="flex flex-col">
             <Image
               alt={cloud.name}
               src={cloud.image}

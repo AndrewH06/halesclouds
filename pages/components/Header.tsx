@@ -5,7 +5,7 @@ const Header: FC = () => {
   return (
     <div className="flex justify-center">
       <h1 className="text-5xl font-semi`bold">
-        <Link href="/">Hale's Clouds</Link>
+        <Link href="/">Hale&apos;s Clouds</Link>
       </h1>
     </div>
   );
