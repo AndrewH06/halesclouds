@@ -17,9 +17,7 @@ const AllClouds = ({ level }: { level: PropTypes }): JSX.Element => {
   const { data, status, isLoading, isError } = useQuery(
     ["clouds"],
     async () => {
-      const response = await axios.get(
-        `${process.env.NEXT_PUBLIC_VERCEL_URL}/api/clouds`
-      );
+      const response = await axios.get(`/api/clouds`);
       return response.data;
     }
   );
