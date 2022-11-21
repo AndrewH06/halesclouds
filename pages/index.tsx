@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-import CloudLayout from "./components/CloudLayout";
+import AllClouds from "./components/AllClouds";
 import Header from "./components/Header";
 
 export default function Home() {
@@ -17,7 +17,7 @@ export default function Home() {
           <Header />
         </header>
         <main className="mt-8">
-          <CloudLayout />
+          <AllClouds />
         </main>
       </div>
       <footer className="flex justify-center w-full bg-gray-100 py-2">

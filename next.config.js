@@ -9,7 +9,7 @@ module.exports = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "www.weather.gov",
+        hostname: "**.**",
       },
     ],
   },
