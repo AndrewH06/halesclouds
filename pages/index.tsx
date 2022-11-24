@@ -1,11 +1,11 @@
 import Head from "next/head";
 import Image from "next/image";
-import CloudLayout from "./components/CloudLayout";
+import AllClouds from "./components/AllClouds";
 import Header from "./components/Header";
 
 export default function Home() {
   return (
-    <div className="text-gray-800 gap-4 relative flex flex-col min-h-screen items-center pt-8 sm:pt-12">
+    <div className="text-gray-800 gap-4 relative flex flex-col min-h-screen items-center mx-24 pt-8 sm:pt-12">
       <Head>
         <title>Hale&apos;s Clouds</title>
         <meta name="description" content="Quickly identify clouds" />
@@ -17,11 +17,14 @@ export default function Home() {
           <Header />
         </header>
         <main className="mt-8">
-          <CloudLayout />
+          <AllClouds />
         </main>
       </div>
-      <footer className="flex justify-center w-full bg-gray-100 py-2">
-        <p>This is for me. I don&apos;t care how ugly it is.</p>
+      <footer className="mt-8 flex justify-center w-screen bg-gray-100 py-2 px-8 text-center">
+        <p>
+          This is still an early implementation of the website. More features
+          will be added in the future.
+        </p>
       </footer>
     </div>
   );
