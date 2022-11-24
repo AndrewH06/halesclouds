@@ -8,20 +8,20 @@ const ImageCarousel = ({
 }: {
   images: Array<string>;
   cloud: string;
-}) => {
+}): JSX.Element => {
+  if (!images) return <div>Error</div>;
   return (
-    <div className="height-[400px]">
+    <div className="height-[300px]">
       <Carousel
         infiniteLoop={true}
         // showArrows={false}
         showStatus={false}
         showIndicators={false}
         emulateTouch={true}
-        swipeable={true}
-        width="400px">
+        width="300px">
         {images.map((image, index) => (
-          <div className="w-[400px] h-[400px]">
-            <Image fill alt="cloud" src={image} />
+          <div key={index} className="w-[300px] h-[300px]">
+            <Image fill alt={cloud} src={image} />
           </div>
         ))}
       </Carousel>

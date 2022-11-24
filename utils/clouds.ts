@@ -30,8 +30,7 @@ export const clouds = {
         "Cirrostratus clouds are thin cloud blankets that cover the sky. Because they are composed of ice crystals, they can create halos around the sun and moon. Cirrostratus clouds are moon. They are thinner than altostratus, their mid level counterpart.",
       formation:
         "They are a result of slowly rising air. Because they form at the forefront of frontal weather systems, they are often are used to predict the weather.",
-      indicates:
-        "Cirrostratus nebulosus indicates a likely warm front brining rain and cirrostratus fibratus indicates likely drizzles.",
+      indicates: "Can indicate rain or drizzle soon.",
       precipitation: 0,
       rarity: 1,
     },
@@ -67,8 +66,7 @@ export const clouds = {
         "Altocumulus clouds are clumped together. They are very diverse in shape and size. They can be differentiated from cirrocumulus by the shaded sides they have.",
       formation:
         "These clouds can be formed in three ways: These can formed by broken up altostatus clouds, mountains creating waves for clouds form, or by rising air pockets cooled by turbulence.",
-      indicates:
-        "These clouds form in settled weather and are usually a sign of fair weather.",
+      indicates: "Usually a sign of fair and stable weather.",
       precipitation: 1,
       rarity: 0,
     },
@@ -83,8 +81,7 @@ export const clouds = {
         "These clouds are pretty boring to look at. They are gray and cover the sky.",
       formation:
         "Altostratus form from cirrostratus clouds descending to a lower level.",
-      indicates:
-        "These clouds indicate a change in weather. They are usually followed by a warm front creating rain or snow.",
+      indicates: "A change in weather is on it's way, usually rain or snow.",
       precipitation: 2,
       rarity: 1,
     },
@@ -116,7 +113,7 @@ export const clouds = {
       formation:
         "Cumulonimbus clouds are born from convection, the process of warm air rising as it becomes less dense than cooler air. A smaller cumulus clouds will grow in cold fronts causing large masses of hot air to rise.",
       indicates:
-        "Extreme weather is on its way. These clouds bring rain, hail, lightning, and sometimes tornadoes. Small collections of them commonly release short heavy showers before dissipating.",
+        "Extreme weather is on its way. These clouds bring rain, hail, lightning, and sometimes tornadoes.",
       precipitation: 3,
       rarity: 2,
     },
@@ -133,7 +130,7 @@ export const clouds = {
       formation:
         "All cumulus clouds are born from convection, the process of warm air rising as it becomes less dense than cooler air.",
       indicates:
-        "Mainly cumulus clouds indicate fair weather, unless they grow into cumulonimbus clouds.",
+        "Indicates fair weather, unless they grow into cumulonimbus clouds.",
       precipitation: 2,
       rarity: 0,
     },
@@ -151,8 +148,7 @@ export const clouds = {
         "These clouds could are basically just stratus and cumulus mixed. They a similar to altocumulus but more dense and lower in the sky.",
       formation:
         "Stratocumulus are formed from a stratus cloud breaking up. They usually form from a warm or cold front.",
-      indicates:
-        "These clouds indicate a change in weather. They can be present in any weather condition in association with other cloud types.",
+      indicates: "A change of weather is on it's way.",
       precipitation: 2,
       rarity: 0,
     },
@@ -165,7 +161,7 @@ export const clouds = {
       description:
         "These clouds bring cloudy and gloomy days. They blanket the sky but stay close to the ground. Sometimes these clouds are low enough and become fog.",
       formation: "Stratus clouds form in calm and moist conditions.",
-      indicates: "They can produce a light drizzle if they are thick enough.",
+      indicates: "Can produce a light drizzle if they are thick enough.",
       precipitation: 2,
       rarity: 1,
     },

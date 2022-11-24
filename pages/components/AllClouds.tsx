@@ -16,19 +16,23 @@ const AllClouds: FC = () => {
     }
   );
 
+  const levelStyle: string = "capitalize text-xl font-semibold text-gray-800";
+
   if (isLoading) return <div>Loading...</div>;
   if (isError) return <div>Error</div>;
 
-  console.log(data.mid);
-
   return (
-    <div className="flex flex-col gap-4">
-      <div className="flex flex-col">
-        <h4 className="mx-auto capitalize text-2xl">High Level</h4>
+    <div className="flex flex-col items-center gap-8">
+      <div className="flex flex-col items-center gap-3">
+        <h4 className={levelStyle}>High Level</h4>
         <RenderClouds clouds={data.high} />
-        <h4 className="mx-auto capitalize text-2xl">Mid Level</h4>
+      </div>
+      <div className="flex flex-col items-center gap-3">
+        <h4 className={levelStyle}>Mid Level</h4>
         <RenderClouds clouds={data.mid} />
-        <h4 className="mx-auto capitalize text-2xl">Low Level</h4>
+      </div>
+      <div className="flex flex-col items-center gap-3">
+        <h4 className={levelStyle}>Low Level</h4>
         <RenderClouds clouds={data.low} />
       </div>
     </div>
