@@ -9,7 +9,7 @@ export default function Home() {
       <Head>
         <title>Hale&apos;s Clouds</title>
         <meta name="description" content="Quickly identify clouds" />
-        <meta property="og:image" content="/me.jpg" />
+        <meta property="og:image" content="/cover.jpg" />
         <link rel="icon" href="/cloud-icon.png" />
       </Head>
       <div className="flex flex-col md:gap-2 w-full min-h-screen max-w-[1080px] mx-8 sm:mx-24 md:mx-32">
