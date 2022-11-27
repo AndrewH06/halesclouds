@@ -1,4 +1,4 @@
-# halesclouds
+# halesclouds.cf
 
 Very barebones website so I can easily identify clouds.
 
